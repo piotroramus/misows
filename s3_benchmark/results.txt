@@ -1,0 +1,31 @@
+Results of upload / lookup of 100MB file done in various way
+
+==================
+Inside EC2 cloud:
+
+Client:
+    - Upload: 4.88s | 20.49 MB / s
+    - Lookup: 2.07s | 48.30 MB / s
+
+s3cmd:
+    - Upload: 5.913s | 16.94 MB / s
+    - Lookup: 1.954s | 51.28 MB / s
+
+aws cli:
+    - Upload: 2.592s | 38.61 MB / s
+    - Lookup: 2.096s | 47.84 MB / s
+
+==================
+Outside the cloud:
+
+Client:
+    - Upload: 431.05s | 0.23 MB / s
+    - Lookup: 93.71s  | 1.06 MB / s
+
+s3cmd:
+    - Upload: 460.89s | 0.21 MB / s
+    - Lookup: 122.23s | 0.81 MB / s
+
+aws cli:
+    - Upload: 443.61s | 0.22 MB / s
+    - Lookup: 96.42s  | 1.03 MB / s
